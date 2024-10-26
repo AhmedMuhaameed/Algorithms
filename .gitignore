@@ -1,0 +1,75 @@
+# Build results
+[Dd]ebug/
+[Rr]elease/
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio specific files
+.vs/
+.vscode/
+*.suo
+*.user
+*.userprefs
+*.sln.ide
+
+# Rider specific files
+.idea/
+
+# Visual Studio Code settings
+.vscode/
+
+# NuGet Packages
+*.nupkg
+*.snupkg
+packages/*
+!packages/build/
+!packages/repositories.config
+
+# Project files
+*.csproj.user
+*.dbmdl
+*.dbproj.schemaview
+*.jfm
+*.pdb
+*.mdb
+
+# Visual Studio temporary files
+*.cache
+*.log
+*.tlog
+*.tmp
+*.temp
+*.vs/
+*.suo
+
+# User-specific files
+*.rsuser
+*.sln.docstates
+
+# Rider specific files
+.idea/
+
+# Other files
+*.jfm
+*.swp
+*.bak
+
+# Database files
+*.mdf
+*.ldf
+
+# Exclude package manager files (if not committed)
+package-lock.json
+yarn.lock
+
+# Test Results
+TestResults/
+*.trx
+
+# DotCover files
+*.dotCover
+
+# Coverage Reports
+coverage/
+*.coverage
+*.coveragexml
