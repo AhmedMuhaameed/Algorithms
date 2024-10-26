@@ -26,5 +26,15 @@ class MainClass
         //Utilites.printArray(mergeSortSortedArr);
         Console.WriteLine("Time taken to Merge sort the array: {0} ms", stopwatch.ElapsedMilliseconds);
 
+
+        QuickSort quickSortObject = new QuickSort();
+        List<double> arrCopy3 = new List<double>(arr);
+        stopwatch.Restart();
+        stopwatch.Start();
+        List<double> quickSortSortedArr = mergeSortObject.sort(arrCopy3);
+        stopwatch.Stop();
+        //Utilites.printArray(mergeSortSortedArr);
+        Console.WriteLine("Time taken to Quick sort the array: {0} ms", stopwatch.ElapsedMilliseconds);
+
     }
 }
