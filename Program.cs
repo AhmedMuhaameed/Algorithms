@@ -67,11 +67,22 @@ class MainClass
         Console.WriteLine("Time taken to Multiply matices using brute force: {0} ms", stopwatch.ElapsedMilliseconds);
         */
 
-        
+        /*
         List<double> arr = Utilites.GenerateRandomArray(100000);
         MaxSubarraySum maxSubarrayProblem = new MaxSubarraySum();
         stopwatch.Start();
         double sum = maxSubarrayProblem.maxSubarraySum(arr,0,arr.Count - 1);
+        stopwatch.Stop();
+        //Utilites.printArray(insertionSortSortedarr);
+        Console.WriteLine("Time taken to max sum array problem: {0} ms", stopwatch.ElapsedMilliseconds);
+        */
+
+        List<double> arr = Utilites.GenerateRandomArray(100000);
+        //List<double> arr = new List<double>{ 10, 4, 5, 8, 6, 11, 26 };
+
+        QuickSelect quickSelectAlgorithm = new QuickSelect();
+        stopwatch.Start();
+        double element = quickSelectAlgorithm.Select(arr, 3);
         stopwatch.Stop();
         //Utilites.printArray(insertionSortSortedarr);
         Console.WriteLine("Time taken to max sum array problem: {0} ms", stopwatch.ElapsedMilliseconds);
