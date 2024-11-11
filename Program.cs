@@ -73,10 +73,10 @@ class MainClass
         stopwatch.Start();
         double sum = maxSubarrayProblem.maxSubarraySum(arr,0,arr.Count - 1);
         stopwatch.Stop();
-        //Utilites.printArray(insertionSortSortedarr);
         Console.WriteLine("Time taken to max sum array problem: {0} ms", stopwatch.ElapsedMilliseconds);
         */
 
+        /*
         List<double> arr = Utilites.GenerateRandomArray(100000);
         //List<double> arr = new List<double>{ 10, 4, 5, 8, 6, 11, 26 };
 
@@ -84,8 +84,16 @@ class MainClass
         stopwatch.Start();
         double element = quickSelectAlgorithm.Select(arr, 3);
         stopwatch.Stop();
-        //Utilites.printArray(insertionSortSortedarr);
-        Console.WriteLine("Time taken to max sum array problem: {0} ms", stopwatch.ElapsedMilliseconds);
+        Console.WriteLine("Time taken to Quick Select Algorithm: {0} ms", stopwatch.ElapsedMilliseconds);
+        */
 
+
+        List<double> arr = Utilites.GenerateRandomArray(100000);
+
+        ReservoirSampling reservoirSamplingAlgorithm = new ReservoirSampling();
+        stopwatch.Start();
+        List<double> sample = reservoirSamplingAlgorithm.Sample(arr, 400);
+        stopwatch.Stop();
+        Console.WriteLine("Time taken to reservoir sampling algorithm: {0} ms", stopwatch.ElapsedMilliseconds);
     }
 }
