@@ -36,7 +36,7 @@ class MainClass
         ////Utilites.printArray(quickSortSortedArr);
         //Console.WriteLine("Time taken to Quick sort the array: {0} ms", stopwatch.ElapsedMilliseconds);
 
-
+        /*
         var A = Utilites.GenerateMatrix(128);
         var B = Utilites.GenerateMatrix(128);
         StrassenMatrixMultiplication strassen = new StrassenMatrixMultiplication();
@@ -65,8 +65,16 @@ class MainClass
         //Console.WriteLine("Result Matrix");
         //Utilites.PrintMatrix(bruteForceMatrixResult);
         Console.WriteLine("Time taken to Multiply matices using brute force: {0} ms", stopwatch.ElapsedMilliseconds);
+        */
 
-
+        
+        List<double> arr = Utilites.GenerateRandomArray(100000);
+        MaxSubarraySum maxSubarrayProblem = new MaxSubarraySum();
+        stopwatch.Start();
+        double sum = maxSubarrayProblem.maxSubarraySum(arr,0,arr.Count - 1);
+        stopwatch.Stop();
+        //Utilites.printArray(insertionSortSortedarr);
+        Console.WriteLine("Time taken to max sum array problem: {0} ms", stopwatch.ElapsedMilliseconds);
 
     }
 }
